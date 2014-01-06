@@ -1,7 +1,7 @@
 class PersonalChef
 
-  def make_toast
-    puts "Making your toast!"
+  def make_toast(color = 'golden', quality = 'great')
+    puts "Making your #{color} color, #{quality} quality toast!"
   end
 
   def make_milkshake
@@ -9,19 +9,3 @@ class PersonalChef
   end
 
 end
-
-class Butler
-
-  def open_front_door
-    puts "Opening the front door"
-  end  
-
-  def open_back_door
-    puts "Opening the back door"
-  end
-
-end
-
-jeeves = Butler.new
-
-jeeves.open_front_door
