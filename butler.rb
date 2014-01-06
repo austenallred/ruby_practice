@@ -1,15 +1,3 @@
-class PersonalChef
-
-  def make_toast
-    puts "Making your toast!"
-  end
-
-  def make_milkshake
-    puts "Bringing the boys to the yard!"
-  end
-
-end
-
 class Butler
 
   def open_front_door
