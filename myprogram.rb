@@ -5,6 +5,3 @@ class Sample
   end
 
 end
-
-s = Sample.new
-s.hello 
