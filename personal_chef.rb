@@ -1,7 +1,11 @@
 class PersonalChef
 require 'date'
   def make_toast(color)
-    puts "Making your #{color} toast!"
+    if color.nil?
+      puts "How am I supposed to make nothingness toast?"
+    else
+      puts "Making your #{color} toast!"
+    end
     return self
   end
 
@@ -62,6 +66,14 @@ require 'date'
       puts "It's just barely boiling."
     elsif minutes == 8
       puts "Hot! Hot! Hot!"
+    end
+    return self
+  end
+
+  def countdown(counter)
+    while counter > 0
+      puts "The counter is at #{counter}"
+      counter = counter - 1
     end
     return self
   end
