@@ -25,4 +25,33 @@ require 'date'
     puts "Happy #{today}, it's the #{day_of_year} day of #{year}"
   end
 
+  def gameplan(meals)
+    meals.each do |meal|
+      puts "We'll have #{meal}..."
+    end
+
+  all_meals = meals.join(", ")
+  puts "Im summary: #{all_meals}"
+  end
+
+  def inventory
+    produce = {apples: 3, oranges: 1, carrots: 12}
+    produce.each do |item, quantity|
+      puts "There are #{quantity} #{item} in the fridge"
+    end
+  end
+
+  def what_got
+    family = {dallen: 26, austen: 24, ryan: 22}
+    family.each do |name, age|
+      puts "The family member named #{name} is #{age} years old"
+    end
+  end
+
+  def feleicia
+    feleicia = {onething: 17, nextthing:25, otherthing:12}
+    feleicia.each do |thing, number|
+      puts "This is the #{thing} thing and this is the #{number} number"
+    end
+  end
 end
