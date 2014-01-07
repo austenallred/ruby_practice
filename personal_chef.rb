@@ -5,8 +5,11 @@ require 'date'
     return self
   end
 
-  def make_eggs(quantity)
-    puts "Making you #{quantity} eggs!"
+  def make_eggs(quantity) 
+    quantity.times do 
+      puts "Making an egg."
+    end
+    puts "I'm done!"
     return self
   end
 
